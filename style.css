@@ -43,7 +43,7 @@ body{
     text-decoration: underline;
 }
 #intro{
-    height: 100vh;
+    height: 600px;
     color: rgb(237, 237, 237);
     display: flex;
     align-items: center;
