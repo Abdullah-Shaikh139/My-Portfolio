@@ -2,15 +2,14 @@
     font-family: poppins;
     src: url(/Fonts/Poppins-Regular.otf);
 }
+
 *{
     margin: 0;
     padding: 0;
     font-family: poppins, tahoma;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(8, 25, 40);
-}
+
 #header{
     position: fixed;
     top: 0;
@@ -19,89 +18,232 @@ body{
     z-index: 100;
     width: 100%;
     padding: 20px 10%;
-    background-color: rgb(8, 25, 40);
+    background-color: rgb(0, 127, 115);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 #logo{
-    font-size: 26px;
+    font-size: 30px;
     color: rgb(237, 237, 237);
     font-weight: 600;
     text-decoration: none;
 }
+
 .links{
     font-size: 18px;
     text-decoration: none;
     margin-left: 33px;
     color: rgb(237, 237, 237);
+    font-weight: bold;
 }
+
 .links:hover{
-    color: rgb(1, 175, 245);
+    color: rgb(3, 64, 58);
 }
+
 .links:active{
     text-decoration: underline;
 }
-#intro{
-    height: 600px;
-    color: rgb(237, 237, 237);
+
+#home{
+    height: 100vh;
+    padding-left: 139.594px;
     display: flex;
     align-items: center;
-    padding-left: 139.594px;
 }
-#content h1{
-    font-size: 40px;
-    font-weight: 800;
+
+#content > h1{
+    font-size: 30px;
+    font-weight: 700;
 }
-#content h3{
-    color: rgb(1, 175, 245);
-    font-size: 28px;
+
+#content > h1 > div{
+    font-size: 50px;
+    font-weight: 700;
 }
-#content p{
-    font-size: 17px;
+
+#content > h3{
+    color: rgb(0, 127, 115);
+    font-size: 35px;
+    font-weight: 700;
 }
-#button-box > a{
-    display: inline-flex;
-    border: 1px solid rgb(1, 175, 245);
-    padding-top: 16px;
-    padding-left: 12px;
-    padding-right: 8px;
-    padding-bottom: 11px;
-    height: 52px;
-    width: 90px;
+
+#content > p{
+    font-size: 15px;
+}
+
+#content{
+    margin-left: 16px;
+}
+
+#my-photo > img{
+    width: 22vw;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 13px rgb(0, 127, 115);
+}
+
+#my-photo > img:hover{
+    box-shadow: 0 0 17px rgb(0, 127, 115);
+}
+
+#social-section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-container{
+    display: flex;
+}
+
+.icons-box > a > i{
+    color: rgb(0, 127, 115);
+    border: 1px solid rgb(0, 127, 115);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.icons-box > a{
     text-decoration: none;
-    border-radius: 8px;
+}
+
+.icons-box > a > i:hover{
+    background-color: rgb(0, 127, 115);
+    color: white;
+    box-shadow: 0 0 8px rgb(0, 127, 115);
+}
+
+#dwnl-rsm > a{
+    text-decoration: none;
+    color: white;
     font-weight: bold;
 }
-#hrm{
-    margin-right: 35px;
-    background-color: rgb(1, 175, 245);
-    color: rgb(8, 25, 40);
-    transition: all 1s linear 0s;
+
+#dwnl-rsm{
+    border: 1px solid rgb(0, 127, 115);
+    background-color: rgb(0, 127, 115);
+    height: 35px;
+    width: 13vw;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
-#tlk{
-    color: rgb(1, 175, 245);
-    background-color: rgb(8, 25, 40);
-    transition: all 1s linear 0s;
+
+#dwnl-rsm > a:hover{
+    box-shadow: 0 0 18px rgb(0, 127, 115);
 }
-/* Hover in Hire me Link */
-#hrm:hover{
-    color: rgb(1, 175, 245);
-    background-color: rgb(8, 25, 40);
+
+#about-me{
+    padding: 88px 98px 17px;
+    background-color: rgb(213, 253, 249);
+    height: 100vh;
 }
-/* Hover in Talk me Link */
-#tlk:hover{
-    background-color: rgb(1, 175, 245);
-    color: rgb(8, 25, 40);
+
+#heading > h2{
+    font-size: 47px;
+    font-weight: bold;
 }
-footer > div > div > a > i{
-    margin: 0 50px;
-    margin-bottom: 20px;
-    color: rgb(1, 175, 245);
+
+#heading > h3{
+    font-size: 25px;
+    font-weight: 700;
 }
-footer > div > div{
-    display: inline-block;
+
+#heading > h2 > span{
+    color: rgb(0, 127, 115);
 }
-footer > div{
-    margin-left: 99.594px;
+
+#heading > h3 > span{
+    color: rgb(0, 127, 115);
+}
+
+#about-me > p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#contact{
+    padding-top: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact > div > h2{
+    font-size: 47px;
+    font-weight: bold;
+    color: rgb(0, 127, 115);
+}
+
+form{
+    margin-bottom: 88px;
+    width: 55vw;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+    width: 49%;
+    padding: 9px;
+    border: 2px solid rgb(0, 127, 115);
+    border-radius: 8px;
+    margin-top: 1%;
+    font-weight: lighter;
+}
+
+textarea{
+    width: 100%;
+}
+
+#submit_button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input[type="submit"]{
+    width: 25%;
+    min-height: 33px;
+    max-height: 40px;
+    background-color: rgb(0, 127, 115);
+    border: 2px solid rgb(0, 127, 115);
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer{
+    padding-bottom: 40px;
+    background-color: rgb(213, 253, 249);
+    padding-top: 45px;
+    margin-top: 20px;
+}
+
+#icon-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+#copyright{
+    text-align: center;
 }
