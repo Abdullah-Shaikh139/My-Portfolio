@@ -1,1 +1,1 @@
-https://abdullah-shaikh139.github.io/My-Portfolio/
+https://abdullah-shaikh139.github.io/Portfolio/
